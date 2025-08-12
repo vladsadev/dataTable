@@ -35,8 +35,8 @@ class UsersTable extends DataTableComponent
 
     public function builder()
     {
-        return User::with('employer')->get();
-//            ->with('employer');
+        return User::with('employer')->get()
+            ->with('employer');
     }
 
 }
